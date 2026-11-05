@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Buku Tamu - The Jungle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>BUKU TAMU THE JUNGLE</h1>
+        <p>Silakan Isi Data Kunjungan Anda</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="bukutamu.html">Buku Tamu</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Formulir Buku Tamu</h2>
+
+        <form action="#" method="post">
+
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama"
+            placeholder="Masukkan nama lengkap" required>
+
+            <label>Jenis Kelamin:</label>
+            <select name="jenis_kelamin" required>
+                <option value="">-- Pilih Jenis Kelamin --</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+
+            <label>Nomor HP:</label>
+            <input type="tel" name="nomor_hp"
+            placeholder="Masukkan nomor HP" required>
+
+            <label>Tanggal Kunjungan:</label>
+            <input type="date" name="tanggal" required>
+
+            <label>Jumlah Pengunjung:</label>
+            <input type="number" name="jumlah"
+            min="1" placeholder="Masukkan jumlah pengunjung" required>
+
+            <label>Wahana yang Ingin Dikunjungi:</label>
+            <select name="wahana" required>
+                <option value="">-- Pilih Wahana --</option>
+                <option value="Water Slide">Water Slide</option>
+                <option value="Kolam Arus">Kolam Arus</option>
+                <option value="Kolam Anak">Kolam Anak</option>
+                <option value="Gazebo">Gazebo</option>
+            </select>
+
+            <label>Tujuan Kunjungan:</label>
+            <textarea name="tujuan" rows="3"
+            placeholder="Tuliskan tujuan kunjungan Anda"></textarea>
+
+            <button type="submit">Kirim Buku Tamu</button>
+
+        </form>
+
+        <br>
+
+        <a href="index.html" class="tombol">
+            Kembali ke Home
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 The Jungle | Buku Tamu Pengunjung</p>
+    </footer>
+
+</body>
+</html>
